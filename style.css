@@ -104,3 +104,33 @@ form button[type="submit"]:hover {
     margin-bottom: 10px;
     border-radius: 5px;
 }
+/* ... (existing styles) ... */
+
+/* Add styles for the new features */
+#search-form button[type="submit"],
+#search-form #confirm-ride {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0073E6;
+    color: #FFFFFF;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#search-form #confirm-ride {
+    display: none;
+}
+
+#search-form button[type="submit"]:hover,
+#search-form #confirm-ride:hover {
+    background-color: #0052A3;
+}
+
+#offer-form label[for="car-id"],
+#offer-form input[type="text"] {
+    margin-top: 10px;
+}
